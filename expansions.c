@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
- * expand_variables - expand variables
- * @data: a pointer to a struct of the program's data.
- * Return: nothing.
+ * expand_variables - first entry point
+ * @data: pointer to data struct
+ * Return: void
  */
 void expand_variables(data_of_program *data)
 {
@@ -49,9 +49,9 @@ void expand_variables(data_of_program *data)
 }
 
 /**
- * expand_alias - expans aliases
- * @data: a pointer to a struct of the program's data
- * Return: nothing.
+ * expand_alias - second entry point
+ * @data: pointer to data struct
+ * Return: void
  */
 void expand_alias(data_of_program *data)
 {
@@ -90,10 +90,10 @@ void expand_alias(data_of_program *data)
 }
 
 /**
- * buffer_add - append string at end of the buffer
- * @buffer: buffer to be filled
- * @str_to_add: string to be copied in the buffer
- * Return: nothing.
+ * buffer_add - third entry point
+ * @buffer: buffer to fill
+ * @str_to_add: string will be filled in buffer
+ * Return: NULL
  */
 int buffer_add(char *buffer, char *str_to_add)
 {
