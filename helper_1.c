@@ -4,7 +4,7 @@ i#include "shell.h"
  * @data: data struct
  * Return: void
  */
-void free_recurrent_data(data_of_program * data)
+void free_recurrent_data(data_of_program *data)
 {
 	if (data->tokens)
 		free_array_of_pointers(data->tokens);
